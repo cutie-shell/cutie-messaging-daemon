@@ -1,0 +1,11 @@
+[Unit]
+Description=Cutie Messaging Daemon
+
+[Service]
+Environment=XDG_DATA_DIRS=~/.local/share:/usr/local/share/:/usr/share/
+Environment=XDG_SESSION_TYPE=wayland
+Environment=QT_QPA_PLATFORM=wayland
+ExecStart=/usr/bin/cutie-messaging-daemon
+
+[Install]
+WantedBy=default.target

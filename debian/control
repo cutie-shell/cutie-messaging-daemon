@@ -1,0 +1,21 @@
+Source: cutie-messaging-daemon
+Section: libs
+Maintainer: Erik Inkinen <erik.inkinen@gmail.com>
+Priority: optional
+Build-Depends: pkg-kde-tools,
+               cmake,
+               qt6-base-dev,
+               qt6-declarative-dev,
+               pkg-config,
+               libqt6dbus6,
+               libcutiemodem-dev,
+               libcutienotification-dev,
+               libcutiestore-dev,
+Standards-Version: 4.5.1
+
+Package: cutie-messaging-daemon
+Architecture: any
+Multi-Arch: foreign
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: This package contains Cutie Messaging app backend daemon.
