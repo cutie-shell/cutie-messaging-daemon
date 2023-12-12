@@ -11,6 +11,3 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 %:
 	dh $@ --buildsystem=cmake --with pkgkde_symbolshelper
-
-override_dh_installsystemduser:
-	dh_installsystemduser --name cutie-messaging-daemon
